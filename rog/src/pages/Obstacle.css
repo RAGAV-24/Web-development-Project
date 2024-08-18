@@ -1,0 +1,9 @@
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background: url('../images/cactus.png') no-repeat center center;
+    background-size: contain;
+  }
+  

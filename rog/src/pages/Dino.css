@@ -1,0 +1,14 @@
+.dino {
+    position: absolute;
+    bottom: 0;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background: url('../images/dino.png') no-repeat center center;
+    background-size: contain;
+    transition: transform 0.5s;
+  }
+  
+  .dino.jump {
+    transform: translateY(-100px);
+  }
+  

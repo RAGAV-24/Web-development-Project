@@ -1,0 +1,69 @@
+.scores-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    background: #3c3b3b;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .scores-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .scores-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .scores-table th, .scores-table td {
+    border: 1px solid #514f4f;
+    padding: 10px;
+  }
+  
+  .scores-table th {
+    background-color: #000000;
+  }
+  
+  .scores-table tr:nth-child(even) {
+    
+    color: #000000;
+    background: #3c3b3b;
+  }
+  
+  .average-score {
+    margin-top: 20px;
+  }
+  
+  .average-score h2 {
+    font-size: 24px;
+    color: #000000;
+  }
+  
+  .back-button,.clear {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0707bd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

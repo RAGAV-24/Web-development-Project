@@ -11,7 +11,7 @@ const app = express();
 // 🌐 Middleware
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://web-development-project-abzq.onrender.com'],
+  origin: ['https://web-development-project-delta.vercel.app', 'https://web-development-project-abzq.onrender.com'],
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization'
 }));

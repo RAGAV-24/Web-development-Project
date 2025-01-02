@@ -11,7 +11,7 @@ const Login = () => {
 
   const authenticateUser = async (email, password) => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('https://web-development-project-abzq.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const Login = () => {
       const response = await authenticateUser(email, password);
       console.log('Authenticated successfully!', response);
       window.alert('Authenticated successfully!');
-      
+
       // Redirect to another component after successful login
       navigate('/dashboard'); // Update with the path to your target component
     } catch (error) {

@@ -18,7 +18,7 @@ app.use(cors({
 // 🗂️ Database Connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect('mongodb+srv://ragav:rudu007@webdevelopment.altfw.mongodb.net/');
     console.log('✅ MongoDB connected');
   } catch (error) {
     console.error('❌ MongoDB connection failed:', error.message);
@@ -38,7 +38,7 @@ const User = mongoose.model('User', UserSchema);
 
 // 📝 Helper Function to Generate JWT
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+  return jwt.sign({ id }, '4a83928b92a6a0e27d65f858708c6a504eb9f4c9e84eb914c07b7c13a3e33b03', { expiresIn: '1h' });
 };
 
 // 🚀 Register Route
